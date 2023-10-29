@@ -92,3 +92,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #EBF3E8;
 }
+
+input:actived {
+  border-color: 1px solid 5px #86A789;
+}
