@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1"/>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  <head>
+  <body>
+    <h1 id="title">learnCode Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Name
+          <input type="text" id="name" name="name" placeholder="Enter your name" required />
+        </label>
+        <label for="email" id="email-label">Email
+          <input type="email" id="email" name="email" placeholder="Enter your email" required />
+        </label>
+        <label for="number" id="number-label">Age <small>(Optional)</small>
+          <input type="number" id="number" name="number" min="17" max="120" placeholder="Age" />
+        </label>
+        <label for="current-role">Which option best describes your current role?
+        <select id="dropdown" name="current-role">
+          <option value="" selected disabled>Select current role</option>
+          <option value="1">Student</option>
+          <option value="2">Full time Job</option>
+          <option value="3">Full time learner</option>
+          <option value="4">Prefer not to say</option>
+          <option value="5">Other</option>
+        </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Would you recommend learnCode to a friend?</legend>
+        <label for="definitely"><input type="radio" name="recommend" id="definitely" class="inline" value="Definitely" />Definitely</label>
+        <label for="maybe"><input type="radio" name="recommend" id="maybe" class="inline" value="Maybe"/>Maybe</label>
+        <label for="notsure"><input type="radio" name="recommend" id="notsure" class="inline" value="Not Sure"/>Not Sure</label>
+      </fieldset>
+      <fieldset>
+        <label>What is your favorite feature of learnCode?
+          <select id="favorite" name="favorite">
+            <option selected disabled value="">Select an Option</option>
+            <option value="1">Challenges</option>
+            <option value="2">Project</option>
+            <option value="3">Community</option>
+            <option value="4">Open Source</option>
+        </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>What would you like to see improved? <small>(Check all that apply)</small></legend>
+        <label for="Front-endProjects"><input type="checkbox" name="improved" id="Front-endProjects" class="inline" value="Front-end Projects" />Front-end Projects</label>
+        <label for="back-endProjects"><input type="checkbox" name="improved" id="back-endProjects" class="inline" value="Front-end Projects"/>Back-end Projects</label>
+        <label for="Data-Visualization"><input type="checkbox" name="improved" id="Data-Visualization" class="inline" value="Data Visualization"/>Data Visualization</label>
+        <label for="Challenges"><input type="checkbox" name="improved" id="Challenges" class="inline" value="Challenges"/>Challenges</label>
+        <label for="OpenSourceCommunity"><input type="checkbox" name="improved" id="OpenSourceCommunity" class="inline" value="Open Source Community"/>Open Source Community</label>
+        <label for="Gitterhelprooms"><input type="checkbox" name="improved" id="Gitterhelprooms" class="inline" value="Gitter help rooms"/>Gitter help rooms</label>
+        <label for="Videos"><input type="checkbox" name="improved" id="Videos" class="inline" value="Videos"/>Videos</label>
+        <label for="CityMeetups"><input type="checkbox" name="improved" id="CityMeetups" class="inline" value="City Meetups"/>City Meetups</label>
+        <label for="Wiki"><input type="checkbox" name="improved" id="Wiki" class="inline" value="Wiki"/>Wiki</label>
+        <label for="Forum"><input type="checkbox" name="improved" id="Forum" class="inline" value="Forum"/>Forum</label>
+        <label for="AdditionalCourses"><input type="checkbox" name="improved" id="Additional Courses" class="inline" value="Additional Courses"/>Additional Courses</label>
+
+        <label>Any comments or suggestions?
+          <textarea placeholder="Enter your comment here..." rows="3" cols="30"></textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+      <input type="submit" value="S U B M I T" id="submit">
+      </fieldset>
+    </form>
+  <body>
+</html>
