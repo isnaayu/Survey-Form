@@ -1,21 +1,27 @@
 body {
   margin: 0;
   width: 100%;
-  background-image: linear-gradient(to right, rgba(178, 200, 186, 0.8), rgba(178, 200, 186, 0.8)), url('https://plus.unsplash.com/premium_photo-1683120916981-d3d6ff7eac3e?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');;
+  background-image: linear-gradient(
+      to right,
+      rgba(178, 200, 186, 0.8),
+      rgba(178, 200, 186, 0.8)
+    ),
+    url("https://plus.unsplash.com/premium_photo-1683120916981-d3d6ff7eac3e?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: 'Poppins', sans-serif;
-  color: #EBF3E8;
+  font-family: "Poppins", sans-serif;
+  color: #ebf3e8;
   font-size: 16px;
 }
 
 h1 {
   font-family: Comic;
-  text-shadow: 3px 3px 5px #EBF3E8;
-  color: #86A789;
+  text-shadow: 3px 3px 5px #ebf3e8;
+  color: #86a789;
 }
 
-h1, p {
+h1,
+p {
   margin: 0.9em auto 0.5em auto;
   font-style: italic;
   text-align: center;
@@ -32,6 +38,7 @@ form {
   min-width: 300px;
   margin: 0 auto;
   padding-bottom: 2em;
+  padding-right: 10px;
   background-color: rgba(134, 167, 137, 0.85);
 }
 
@@ -40,36 +47,49 @@ label {
   margin: 0.5rem 0;
 }
 
-input, select, textarea {
-  width: 100%;
-  margin: 10px 0 0 0;
+input,
+select,
+textarea {
+  margin: 10px auto;
   min-height: 2.5em;
-  border: 1px solid #86A789;
-  background-color: #FFFFFF;
+  border: 1px solid #86a789;
+  background-color: #ffffff;
   border-radius: 9px;
-  padding: 0.5em;
-  color: #86A789;
+  padding: 0.4em;
+  color: #86a789;
 }
 
-input:focus, select:focus, textarea:focus {
+select {
+  width: 100%;
+}
+
+input,
+textarea {
+  width: 97.5%;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
   outline: none;
-  border-color: #86A789;
-  box-shadow: 0 0 5px #EBF3E8;
+  border-color: #86a789;
+  box-shadow: 0 0 5px #ebf3e8;
 }
 
-input[type="radio"], input[type="checkbox"] {
+input[type="radio"],
+input[type="checkbox"] {
   box-shadow: none;
   /* margin: -10 4px ; */
   /* margin-top: -5px;
   margin-bottom: -5px; */
 }
 
-option:checked{
+option:checked {
   color: black;
 }
 
-option:selected{
-  color: #86A789;
+option:selected {
+  color: #86a789;
 }
 
 .inline {
@@ -80,19 +100,15 @@ option:selected{
 
 input[type="submit"] {
   width: 100%;
-  color: ;
+  /* color: ; */
   display: block;
   margin: 0.5rem auto;
   height: 2em;
   font-size: 0.9em;
   /* background: linear-gradient(10deg, #86A789, #B2C8BA, #D2E3C8, #EBF3E8) */
-  background-color: #D2E3C8;
+  background-color: #d2e3c8;
 }
 
 input[type="submit"]:hover {
-  background-color: #EBF3E8;
-}
-
-input:actived {
-  border-color: 1px solid 5px #86A789;
+  background-color: #ebf3e8;
 }
